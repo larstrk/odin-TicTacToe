@@ -61,6 +61,8 @@ const Game = (() => {
             Gameboard.update(i, "");
         }
         Gameboard.render();
+        displayController.renderMessage("");
+        currentPlayer = 0;
         gameOver = false;
     }
 
@@ -155,3 +157,4 @@ restartBtn.addEventListener("click", ()=> {
     console.log("Game restarted");
 })
 
+Gameboard.render();
